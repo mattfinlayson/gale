@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>{{ title }}</title>
+	</head>
+	<body>
+	{% for item in items[0:2] %}
+		<section id="articles">
+			<article class="post">
+				<header>
+					<h1><a href="/article/{{ item["new_url"] }}"> {{ item["title"] }} </a></h1>
+					<span class="date">{{ item["date"] }}</span>
+				</header>
+				<section class="content">
+					{{ item["body"] }}
+				</section>
+			</article>
+		</section>
+	{% end %}
+
+	<section id="articles">
+		<ul>
+		{% for item in items[2:] %}
+			<li>
+				<a href="/article/{{ item["new_url"] }}">{{escape(item["title"])}}</a>
+				<span class="wc"><span class="separator">.</span>{{ item["word_count"] }} words</span>
+				<span style="float: right" class="date"> {{ escape(item["date"]) }} </span>
+			</li>
+		{% end %}
+		</ul>
+	</section>
+
+	<footer>
+		powered by <a href="http://unsure.org/gale">gale</a>
+	</footer>
+
+	</body>
+</html>
