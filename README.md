@@ -7,9 +7,9 @@ A little python blogging engine based heavily on toto and inspired by yaki
 introduction
 =============
 
-> git clone git://github.com/savagegus/gale.git myblog
-> cd myblog
-> python gale.py
+    git clone git://github.com/savagegus/gale.git myblog
+    cd myblog
+    python gale.py
 ***
 
 philosophy
