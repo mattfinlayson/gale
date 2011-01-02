@@ -21,3 +21,8 @@ tornado is the only moving part, it has an index handler and an article handler 
 articles are stored as text files, following toto's format. metadata is embedded in a yaml format.
 
 individual articles are accessed through pretty url's like /articles/2011/1/1/blogging-with-gale
+
+# thanks
+To [tornado]("http://www.tornadoweb.org/") for the heavy lifting.
+To [Alexis Sellier]("http://cloudhead.io") for [toto]("https://github.com/cloudhead/toto") and all the ideas the theme gale uses
+To [Rui Carmo]("http://the.taoofmac.com") for [yaki]("http://code.google.com/p/yaki/") and the ideas that gale steals from it.
