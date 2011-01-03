@@ -11,6 +11,10 @@ sys.path.append("lib")
 from ArticleProvider import ArticleProvider
 
 class MainHandler(tornado.web.RequestHandler):
+	def get(self):
+		self.write("nothing to see here.")
+
+class BlogHandler(tornado.web.RequestHandler):
 	def initialize(self):
 		self.a = ArticleProvider()
 
@@ -35,7 +39,8 @@ settings = {
 
 application = tornado.web.Application([
 	(r"/", MainHandler),
-	(r"/article/([0-9]+/[0-9]+/[0-9]+/[-a-z]+/)", ArticleHandler),
+	(r"/blog/", BlogHandler),
+	(r"/blog/([0-9]+/[0-9]+/[0-9]+/[-a-z]+/)", ArticleHandler),
 ], **settings)
 
 if __name__ == "__main__":
