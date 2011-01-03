@@ -15,7 +15,8 @@ class ArticleProvider:
             "tags":"",
             "slug":"",
             "old_url":"",
-            "new_url":"" }
+            "new_url":"",
+			"content_type":"" }
 		self.parsed_list = []
 		for article in self.list:
 			self.parsed_list.append(self.parse_article(article, self.parser))	
@@ -48,7 +49,7 @@ class ArticleProvider:
 			for key in parser:
 				if key + ': ' in line:
 					parsed_article[key] = line.replace(key + ': ','').replace('\n','') 
-		parsed_article["body"] = ''.join(text[7:])
+		parsed_article["body"] = ''.join(text[8:])
 		words = string.split(parsed_article["body"])
 		parsed_article["word_count"] = len(words)
 		return parsed_article
