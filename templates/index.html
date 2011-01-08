@@ -5,6 +5,24 @@
 		<title>{{ title }}</title>
 	</head>
 	<body>
+	<div class="wrapper">
+		<div class="headr"> 
+			<a href="/about/">unsure.org</a> poorly updated since 2004
+		</div> 
+		<div class="nav"> 
+			<ul> 
+				<li> 
+					<a href="/blog/">blog</a> 
+				</li> 
+				<li> 
+					<a href="/projects/">projects</a> 
+				</li> 
+				<li> 
+					<a href="/about/">about</a> 
+				</li> 
+			</ul> 
+		</div> 
+	</div>
 	{% for item in items[0:2] %}
 		<section id="articles">
 			<article class="post">
@@ -18,7 +36,6 @@
 			</article>
 		</section>
 	{% end %}
-
 	<section id="articles">
 		<ul>
 		{% for item in items[2:] %}

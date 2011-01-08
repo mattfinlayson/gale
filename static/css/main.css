@@ -12,6 +12,19 @@ body {
 header, footer, section, article {
 	display: block;
 }
+div.headr{
+	float:left;
+	font-family: 'Myriad Pro', 'Droid Serif', Georgia, serif;
+    font-style: italic;
+  	color: #888;
+}
+div.nav{float:right;}
+div.headr,
+div.nav{height:25px;margin-bottom:42px;}
+div.nav ul{margin:0;padding:0;list-style:none;}
+div.nav ul li{display:inline;margin:0 3px;padding:0;}
+div.wrapper{height:85px;}
+
 #content {
 }
 #by {

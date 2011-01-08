@@ -3,6 +3,7 @@
 import os
 import markdown
 import string
+import datetime
 
 class ArticleProvider:
 	def __init__(self):
@@ -40,6 +41,14 @@ class ArticleProvider:
 			if article["new_url"] == new_url:
 				return article
 		return dummy_article
+		
+	def pub_dates(self):
+		days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+		months = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
+		for article in self.parsed_list:
+			year, month, day = article["date"].split("/")
+			pub_date = datetime.date(int(year), int(month), int(day))
+			article["date"] = "%s, %s %s %s 00:00:01 GMT" % (days[pub_date.weekday()], pub_date.day, months[pub_date.month], pub_date.year)
 
 	def parse_article(self, article, parser):
 		f = open(os.path.join(self.path, article))
@@ -53,7 +62,3 @@ class ArticleProvider:
 		words = string.split(parsed_article["body"])
 		parsed_article["word_count"] = len(words)
 		return parsed_article
-
-		
-a = ArticleProvider()
-print a.fetch_one("2009/12/07/the-dude-abides/")

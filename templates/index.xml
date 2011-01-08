@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="2.0">
+	<channel>
+		<title>{{ title }}</title>
+		<link>{{ url }}/blog/feed/</link>
+		<description>blog feed for unsure.org</description>
+		<language>en-en</language>  
+		
+		{% for item in items[0:10] %}
+		<item>
+			<link>{{ url }}/blog/{{ item["new_url"].replace('&','&amp;') }}</link>
+			<title>{{ item["title"].replace('&','&amp;') }}</title>
+			<description>{{ item["title"].replace('&','&amp;') }}</description>
+			<pubDate>{{ item["date"] }}</pubDate>
+			<guid>{{ url }}/blog/{{ item["new_url"].replace('&','&amp;') }}</guid>
+		</item>
+	{% end %}
+	</channel>
+</rss>

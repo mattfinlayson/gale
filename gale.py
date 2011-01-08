@@ -4,6 +4,8 @@ import os
 import tornado.httpserver
 import tornado.ioloop
 import tornado.web
+import datetime
+import PyRSS2Gen
 
 import sys
 sys.path.append("lib")
@@ -20,6 +22,15 @@ class BlogHandler(tornado.web.RequestHandler):
 
 	def get(self):
 		self.render("templates/index.html", title="index", items=self.a.parsed_list)
+
+class RssHandler(tornado.web.RequestHandler):
+	def initialize(self):
+		self.a = ArticleProvider()
+
+	def get(self):
+		self.set_header("Content-Type", "application/rss+xml")
+		self.a.pub_dates()
+		self.render("templates/index.xml", title="unsure.org blog feed", url="http://unsure.org", author="Matthew Finlayson", email="matt@unsure.org", items=self.a.parsed_list)
 
 class ArticleHandler(tornado.web.RequestHandler):
 	def initialize(self):
@@ -40,7 +51,8 @@ settings = {
 application = tornado.web.Application([
 	(r"/", MainHandler),
 	(r"/blog/", BlogHandler),
-	(r"/blog/([0-9]+/[0-9]+/[0-9]+/[-a-z]+/)", ArticleHandler),
+	(r"/blog/feed/", RssHandler),
+	(r"/blog/([0-9]+/[0-9]+/[0-9]+/[-a-z0-9]+/)", ArticleHandler),
 ], **settings)
 
 if __name__ == "__main__":
