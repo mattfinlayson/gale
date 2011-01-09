@@ -52,7 +52,7 @@ application = tornado.web.Application([
 	(r"/", MainHandler),
 	(r"/blog/", BlogHandler),
 	(r"/blog/feed/", RssHandler),
-	(r"/blog/([0-9]+/[0-9]+/[0-9]+/[-a-z0-9]+/)", ArticleHandler),
+	(r"/blog/([0-9]+/[0-9]+/[0-9]+/[-a-z0-9,]+/)", ArticleHandler),
 ], **settings)
 
 if __name__ == "__main__":
