@@ -29,7 +29,7 @@ class RssHandler(tornado.web.RequestHandler):
 
 	def get(self):
 		self.set_header("Content-Type", "application/rss+xml")
-		self.a.pub_dates()
+		self.a.atom_dates()
 		self.render("templates/index.xml", title="unsure.org blog feed", url="http://unsure.org", author="Matthew Finlayson", email="matt@unsure.org", items=self.a.parsed_list)
 
 class ArticleHandler(tornado.web.RequestHandler):

@@ -42,13 +42,19 @@ class ArticleProvider:
 				return article
 		return dummy_article
 		
-	def pub_dates(self):
+	def rss_dates(self):
 		days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 		months = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
 		for article in self.parsed_list:
 			year, month, day = article["date"].split("/")
 			pub_date = datetime.date(int(year), int(month), int(day))
 			article["date"] = "%s, %s %s %s 00:00:01 GMT" % (days[pub_date.weekday()], pub_date.day, months[pub_date.month], pub_date.year)
+
+	def atom_dates(self):
+		for article in self.parsed_list:
+			year, month, day = article["date"].split("/")
+			pub_date = datetime.date(int(year), int(month), int(day))
+			article["date"] = "%s-%s-%sT00:00:01Z" % (pub_date.year, pub_date.month, pub_date.day)
 
 	def parse_article(self, article, parser):
 		f = open(os.path.join(self.path, article))

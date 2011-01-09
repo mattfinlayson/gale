@@ -1,20 +1,33 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 
-<rss version="2.0">
-	<channel>
-		<title>{{ title }}</title>
-		<link>{{ url }}/blog/feed/</link>
-		<description>blog feed for unsure.org</description>
-		<language>en-en</language>  
-		
-		{% for item in items[0:10] %}
-		<item>
-			<link>{{ url }}/blog/{{ item["new_url"].replace('&','&amp;') }}</link>
-			<title>{{ item["title"].replace('&','&amp;') }}</title>
-			<description>{{ item["title"].replace('&','&amp;') }}</description>
-			<pubDate>{{ item["date"] }}</pubDate>
-			<guid>{{ url }}/blog/{{ item["new_url"].replace('&','&amp;') }}</guid>
-		</item>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title type="text">{{ title }}</title>
+	<updated>{{ items[0]["date"] }}</updated>
+	<id>tag:{{ url }},2011:1</id>
+	<link rel="alternate" type="text/html" hreflang="en" href="{{ url }}"/>
+	<link rel="self" type="application/atom+xml" href="{{ url }}/blog/feed/"/>
+	<rights>Copyright (c) 2011, Matthew Finlayson</rights>
+	<generator uri="http://www.unsure.org/projects/gale/" version="1.0">
+    	gale
+	</generator>
+
+	{% for item in items[0:10] %}
+	<entry>
+		<title>{{ item["title"].replace('&','&amp;') }}</title>
+		<link rel="alternate" type="text/html" href="{{ url }}/blog/{{ item["new_url"].replace('&','&amp;') }}"/>
+		<id>tag:{{ url }},{{ item["date"][0:10] }}:/blog/{{ item["new_url"] }}</id>
+		<updated>{{ item["date"] }}</updated>
+		<published>{{ item["date"] }}</published>
+		<author>
+			<name>{{ author }}</name>
+			<uri>{{ url }}</uri>
+			<email>{{ email }}</email>
+		</author>
+		<content type="xhtml" xml:lang="en" xml:base="{{ url }}">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				{{ item["body"] }}
+			</div>
+		</content>
+	</entry>
 	{% end %}
-	</channel>
-</rss>
+</feed>
