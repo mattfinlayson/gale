@@ -11,6 +11,7 @@ import sys
 sys.path.append("lib")
 
 from ArticleProvider import ArticleProvider
+from PageProvider import PageProvider
 
 class MainHandler(tornado.web.RequestHandler):
 	def get(self):
@@ -38,8 +39,17 @@ class ArticleHandler(tornado.web.RequestHandler):
 
 	def get(self, new_url):
 		article = self.a.fetch_one(new_url)
-		#self.write(new_url + article["body"])
+		if not article: raise tornado.web.HTTPError(404)
 		self.render("templates/article.html", title=article["title"], item=article)
+
+class PageHandler(tornado.web.RequestHandler):
+	def initialize(self):
+		self.a = PageProvider()
+
+	def get(self, new_url):
+		page = self.a.fetch_one(new_url)
+		if not article: raise tornado.web.HTTPError(404)
+		self.render("templates/article.html", title=page["title"], item=page)
 
 settings = {
     "static_path": os.path.join(os.path.dirname(__file__), "static"),
@@ -52,6 +62,8 @@ application = tornado.web.Application([
 	(r"/", MainHandler),
 	(r"/blog/", BlogHandler),
 	(r"/blog/feed/", RssHandler),
+	(r"/about/", MainHandler),
+	(r"/projects/", MainHandler),
 	(r"/blog/([0-9]+/[0-9]+/[0-9]+/[-a-z0-9,]+/)", ArticleHandler),
 ], **settings)
 
