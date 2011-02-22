@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+		<LINK REL="SHORTCUT ICON" HREF="/static/images/favicon.ico">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>{{ title }}</title>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-632866-6']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAksra6406nte1v0bMi_bFNhSV1lNw0wL2kR2rh5nuxk-w58itGBQPcZ9w4woC3v2wLed7Y6EJYqL3Jg"
+	      type="text/javascript"></script> 
+	    <script type="text/javascript"> 
+
+	    var map;
+	    var geoXml; 
+	    var toggleState = 1;
+
+	    function initialize() {
+	      if (GBrowserIsCompatible()) {
+	        geoXml = new GGeoXml("http://feeds.foursquare.com/history/4e251cc4afd8f449e9791550af0ffe9a.kml");
+	        map = new GMap2(document.getElementById("map_canvas")); 
+	        map.setCenter(new GLatLng(45.528453,-122.673675), 14); 
+	        map.setUIToDefault();
+	        map.addOverlay(geoXml);
+	      }
+	    } 
+		</script>
+	</head>
+	<body onload="initialize()"> 
+	<div class="wrapper">
+		<div class="headr"> 
+			<a href="/about/">unsure.org</a> poorly updated since 2004
+		</div> 
+		<div class="nav"> 
+			<ul> 
+				<li> 
+					<a href="/blog/">blog</a> 
+				</li> 
+				<li> 
+					<a href="/projects/">projects</a> 
+				</li> 
+				<li> 
+					<a href="/about/">about</a> 
+				</li> 
+				<li>
+					<a href="/blog/feed/">feed</a>
+				</li>
+			</ul> 
+		</div> 
+	</div>
+	<section id="articles"> 
+		<article class="post"> 
+			<header> 
+				<h1>Recently been</h1> 
+				<span class="date">foursquare checkins</span> 
+			</header> 
+		<section class="content">
+			<div id="map_canvas" style="width: 100%; height: 500px; margin:auto; border: 1px solid #b83000;"></div> 
+			</div> 
+    		<br clear="all"/>
+		</section>
+		</article>
+	</section>
+
+	<footer>
+		powered by <a href="http://unsure.org/gale">gale</a>
+	</footer>
+
+	</body>
+</html>
