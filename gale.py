@@ -15,7 +15,7 @@ from PageProvider import PageProvider
 
 class MainHandler(tornado.web.RequestHandler):
 	def get(self):
-		self.write("nothing to see here.")
+		self.render("templates/about.html", title="index")
 
 class BlogHandler(tornado.web.RequestHandler):
 	def initialize(self):

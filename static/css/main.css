@@ -6,8 +6,6 @@ body {
   line-height: 30px;
   padding: 15px;
   width: 760px;
-
-
 }
 header, footer, section, article {
 	display: block;
@@ -132,6 +130,8 @@ ul, li {
 }
 code {
   font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
+  padding: 20px 25px;
+  font-size: 12px;
 }
 pre {
   padding: 20px;
