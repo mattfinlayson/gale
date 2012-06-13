@@ -1,0 +1,10 @@
+---
+title: Hey, Clarkbw!
+date: 2009/11/15
+tags: 
+slug: hey,-clarkbw
+old_url: http://blog.unsure.org/post/245310485
+new_url: 2009/11/15/hey,-clarkbw/
+content_type: text/html
+
+<p></p><p><a href="http://topherchris.com/post/244647618/all-the-east-coast-people-are-asleep-lets-talk">topherchris</a>:</p><p>All the East Coast people are asleep.  Let's talk shit about them.</p>

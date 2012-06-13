@@ -1,0 +1,24 @@
+---
+title: Calibre
+date: 2009/03/31
+tags: amazon kindle ebook calibre
+slug: calibre
+old_url: http://blog.unsure.org/post/543355419
+new_url: 2009/03/31/calibre/
+content_type: text/html
+
+<p><a href="http://calibre-ebook.com/">Calibre</a> is an open source package for eBook management. It&#8217;s a little rough around the edges but it does a couple really nice things.</p>
+
+	<p>Local conversion of all major formats. This means if you have: MOBI, LIT, PRC, EPUB, ODT, FB2, HTML, CBR, CBZ, RTF, TXT, or PDF&#8217;s you can convert them to MOBI books which the kindle can recognize.</p>
+
+	<p>Meta data writing for Title, Author, Date, Publisher, Rating, and Series Number can be associated with the eBook allowing you to have a sane collection of books. </p>
+
+	<p>News fetching can be automated allowing you to fetch the contets of a website eg. Wired, Linux Magazine, etc. These sites are then converted into a magazine with full table of contents. This is done batch style so you either have to fire up Calibre and do one time fetches of your sites or leave it running and sync regularly. (I do the former)</p>
+
+	<p>eBook Managment is the last notable feature. This is a nice to have, with 1.5 gigs of space I plan on leaving content on the kindle, however it&#8217;s nice to have a way to manage ebooks as I imagine I&#8217;ll be collecting more of them over time.</p>
+
+	<h2>Getting Calibre</h2>
+
+	<p>Download available <a href="http://calibre.kovidgoyal.net/">here</a></p>
+
+

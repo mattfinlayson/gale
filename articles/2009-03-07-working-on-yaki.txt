@@ -1,0 +1,20 @@
+---
+title: Working on Yaki
+date: 2009/03/07
+tags: yaki blog python
+slug: working-on-yaki
+old_url: http://blog.unsure.org/post/543355419
+new_url: 2009/03/07/working-on-yaki/
+content_type: text/html
+
+<h3>Date/Time Changes</h3>
+
+<p>I&#8217;ve been working on yaki a bit. First off to fit the theme I needed to make some changes to the postinfo in the header. It&#8217;s not pretty but it works for the time being. </p>
+
+<h3>Presentation and Logic</h3>
+
+<p>I&#8217;m not happy with the bits and pieces of presentation logic scattered around the code. I&#8217;m going to try to decouple them a bit. Not MVC.</p>
+
+<h3>Comments</h3>
+
+<p>I&#8217;ve integrated disqus once. It was fairly theme dependent though and since clarkbw stole my theme I&#8217;ve had to switch. Oh the agony.</p>

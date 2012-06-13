@@ -1,0 +1,81 @@
+---
+title: Running Gale
+date: 2011/02/21
+tags: python tornado supervisor
+slug: running gale
+old_url: http://blog.unsure.org/post/543355419
+new_url: 2011/02/21/running-gale
+content_type: text/html
+
+<p>
+I've had <a href="https://github.com/savagegus/gale"> gale</a> running my site now since I started hacking on it at the beginning of the year. It's a little tornado app cobbled together with some partially formed ideas from:
+<ul>
+	<li><a href="https://github.com/cloudhead/toto/">toto</a> - you'll notice it looks pretty much exactly like toto)</li>
+	<li><a href="http://code.google.com/p/yaki/">yaki</a> - I like yaki's approach but I hate working on it and running it</li>
+	<li><a href="http://busterbenson.com/">busterbenson</a> now I'm trying to implement some of the author centric view of what I do online even if I'm not writing a whole lot.</li>
+</ul>
+
+<p>It's no where near anything I'd consider runnable for anyone else. My API keys litter the source code and it's very (very) fagile, however it can be done. It is stood up behind Apache w/ mod_proxy and I keep the tornado process managed with supervisor.</p>
+
+<p><a href="http://supervisord.org/">Supervisor</a> is a python program meant to give you init like control over long runnning processes and allows you to start them at boot time. Even though it is easy enough to cobble together an init script it gets hairy to manage multiple async processes and watchdog them with bash. Supervisor just ends up being a lot cleaner and simpler. This is my config:</p>
+<pre>
+<code>
+[unix_http_server]
+file=/tmp/supervisor.sock   ; (the path to the socket file)
+
+[supervisord]
+logfile=/tmp/supervisord.log ; (main log file;default $CWD/supervisord.log)
+logfile_maxbytes=50MB       ; (max main logfile bytes b4 rotation;default 50MB)
+logfile_backups=10          ; (num of main logfile rotation backups;default 10)
+loglevel=info               ; (log level;default info; others: debug,warn,trace)
+pidfile=/tmp/supervisord.pid ; (supervisord pidfile;default supervisord.pid)
+nodaemon=false              ; (start in foreground if true;default false)
+minfds=1024                 ; (min. avail startup file descriptors;default 1024)
+minprocs=200                ; (min. avail process descriptors;default 200)
+
+[rpcinterface:supervisor]
+supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface
+
+[supervisorctl]
+serverurl=unix:///tmp/supervisor.sock ; use a unix:// URL  for a unix socket
+
+[program:gale-8888]
+command=/home/matt/gale/gale.py --port=8888
+directory=/home/matt/gale
+autorestart=true
+redirect_stderr=true
+stdout_logfile=/home/matt/logs/gale-8888.log
+stdout_logfile_maxbytes=500MB
+stdout_logfile_backups=50
+stdout_capture_maxbytes=1MB
+stdout_events_enabled=false
+loglevel=warn
+</code>
+</pre>
+<p>Apache fronts tornado, eventually to serve static content (if I ever stop hosting it in dropbox) and to balance aross multiple tornado instances. It's really simple as far as apache configs go, the only thing to note is the rewrite rule to deal with stupid trailing slash issues.</p>
+<pre>
+<code>
+<VirtualHost *:80>
+    ServerAdmin matt@unsure.org
+    ServerName  unsure.org
+    ServerAlias www.unsure.org
+    DocumentRoot /home/matt/public_html
+
+	RewriteEngine  on
+	RewriteRule    ^(.+[^/])$           $1/  [R=301,L]
+	RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
+	RewriteRule . %1/%2 [R=301,L]
+
+    ProxyPass / http://unsure.org:8888/
+    ProxyPassReverse / http://unsure.org:8888/
+	<Location />
+    	Order allow,deny
+    	Allow from all
+	</Location>
+
+    LogLevel warn
+    ErrorLog /home/matt/logs/unsure.org-error_log
+    CustomLog /home/matt/logs/unsure.org-access_log combined
+</VirtualHost>
+</code>
+</pre>

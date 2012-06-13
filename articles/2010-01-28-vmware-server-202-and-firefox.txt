@@ -1,0 +1,10 @@
+---
+title: VMware Server 2.0.2 and Firefox
+date: 2010/01/28
+tags: tech
+slug: vmware-server-202-and-firefox
+old_url: http://blog.unsure.org/post/358370627
+new_url: 2010/01/28/vmware-server-202-and-firefox/
+content_type: text/html
+
+<p></p><p>VMware Server Console plugin for Firefox does not work with firefox 3.6.x I hope that saves an hour of your day as well.</p><p id="tags">Tagged with: tech</p>

@@ -1,0 +1,10 @@
+---
+title: Kitten Mittens!
+date: 2009/12/04
+tags: 
+slug: kitten-mittens
+old_url: http://blog.unsure.org/post/269242665
+new_url: 2009/12/04/kitten-mittens/
+content_type: text/html
+
+<p></p><p><a href="http://gifparty.tumblr.com/post/234770360">gifparty</a>:</p><p><a href="http://thisrecording.com/"><img src="http://i34.tinypic.com/2u4822a.gif" width="400" height="213" /></a></p>

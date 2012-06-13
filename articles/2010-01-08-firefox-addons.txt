@@ -1,0 +1,10 @@
+---
+title: Firefox Addons
+date: 2010/01/08
+tags: tech
+slug: firefox-addons
+old_url: http://blog.unsure.org/post/323785418
+new_url: 2010/01/08/firefox-addons/
+content_type: text/html
+
+<p></p><p>So I&#8217;m getting ready to format and reinstall from scratch on my macbook. I&#8217;m doing a little do diligence for keeping track of some of the crap I always forget to save. Here is a list of my current firefox extensions.</p><p>Is there anything I should be using that is obviously missing (@savagegus)?</p><p id="tags">Tagged with: tech</p>

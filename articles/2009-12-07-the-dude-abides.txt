@@ -1,0 +1,10 @@
+---
+title: The Dude Abides
+date: 2009/12/07
+tags: 
+slug: the-dude-abides
+old_url: http://blog.unsure.org/post/273495359
+new_url: 2009/12/07/the-dude-abides/
+content_type: text/html
+
+<p></p><p><a href="http://gifparty.tumblr.com/post/185680264">gifparty</a>:</p><p><img src="http://i29.tinypic.com/2s6apa9.jpg" width="400" /></p>

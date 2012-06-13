@@ -1,0 +1,10 @@
+---
+title: Yes its stupid, but I want to be able to listen to music too.
+date: 2010/02/15
+tags: 
+slug: yes-its-stupid,-but-i-want-to-be-able-to-listen-to-music-too
+old_url: http://blog.unsure.org/post/392221338
+new_url: 2010/02/15/yes-its-stupid,-but-i-want-to-be-able-to-listen-to-music-too/
+content_type: text/html
+
+<p></p><p><a href="http://stevenf.tumblr.com/post/391510844/a-homebrew-app-for-the-palm-pre-reboots-your-phone">stevenf</a>:</p><p>A homebrew app for the Palm Pre <a href="http://www.precentral.net/reboot-schedule-homebrew-app-does-reboots-your-schedule">reboots your phone according to a schedule</a>.</p><p>This is such a perfectly encapsulated nutshell of exactly why Apple does not allow third-party background processes on the iPhone.</p><p>On the other hand, a Pre can play music from Pandora in the background while you do something else.</p><p>This gets right to the very heart of the old world / new world schism.</p>

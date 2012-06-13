@@ -1,0 +1,92 @@
+---
+title: Amazon Kindle Review
+date: 2009/03/18
+tags: amazon kindle ebook
+slug: amazon-kindle-review
+old_url: http://blog.unsure.org/post/543355419
+new_url: 2009/03/18/amazon-kindle-review/
+content_type: text/html
+
+<p>I'll admit I have gadget lust. I tend to buy things earlier than I should and sometimes things I don't need. Sometimes this works out well, like the iPhone 3G and sometimes it doesn't work. I've been eyeing the Kindle for quite a while but my reading had fallen way off so I didn't really have a need. Then late last year my Mom picked up a Kindle on Oprah's recommendation. I played with it a bit and decided it still wasn't for me.</p>
+
+	<p>Since then a couple things have changed. Amazon announced the Kindle 2, and I moved to Portland. Since I moved I started reading quite a bit more, mostly thanks to the public library.</p>
+
+	<p>Thanks to working remotely I've discovered myself travelling a couple times a month, now with a couple books in tow. Ala use case.</p>
+
+	<h2>Getting It</h2>
+
+	<p>I ordered the Kindle on announce day. I figured I was pretty far down the queue, but to my surprise it showed up on release day. Unboxing is covered <a href="http://www.crunchgear.com/2009/02/24/exclusive-crunchgears-kindle-2-unboxing/">elsewhere</a> so I won't go into it too far. </p>
+
+	<p>There is one thing of note that was kinda cool though, normally a new device will have a plastic overlay with &#8216;stop, plug it in for a few hours' printed on it. For the Kindle the e-Ink screen was painted with this message. It took me a minute to realize this as I picked around the edges for the removal tab. Although kinda sad for me the point is I wasn't able to tell the difference between the e-Ink screen and what I expected was a printed message to the dumb user.</p>
+
+	<p>Oh and there is one more thing that is cool. It shows up at your door registered to you and linked to your Amazon profile. Thank you.</p>
+
+	<h2>The Good</h2>
+
+	<p>The real upsides of the Kindle show up when it does things that books can't do. </p>
+
+	<h3>Search</h3>
+
+	<p>My mind is aligned to paper books. I know about where I am in it when I'm reading, I have the ability to spacially locate things I'm looking for if I need to refrence them or show someone else. The Kindle just doesn't have this, you can't even use &#8216;page numbers' reliably since a font size change will throw that all out of wack. Search is the answer to this. The keyboard bites but it works. Now all the times I want to grep some text as I read I actually can. </p>
+
+	<h3>Portability</h3>
+
+	<p>It's littler than a book. </p>
+
+	<h3>Instant Gratification</h3>
+
+	<p>Free preview chapter of any book. This helps in browsing for new books and solves the paradigm shift of wandering a bookstore to find something new. It's not perfect and I think I'll still wander <a href="http://powells.com/">Powell's</a> when I'm thinking of a new book, but at least it's an option that works.</p>
+
+	<p>When you do want to buy something it is painless, 1-click shopping an less than a minute later it's on the device ready to go. My only complaint is that it doesn't delete the sample chapter as part of this process.</p>
+
+	<h3>Convergence</h3>
+
+	<p>A few weeks after the Kindle 2 launch Amazon announced the Kindle app for the iPhone. Besides the obvious plus of increasing the potential customer base of their eBooks it introduced an interesting convergence point. Now if I purchased a book I can pick up my iPhone at any point and continue reading sans kindle. If I go back to the Kindle my bookmark is picked up and I can continue reading. Since I always have my iPhone on me this is a nice time killer that doesn't interrupt the reading flow. </p>
+
+	<p>This is not perfect however, documents I email to my Kindle are not replicated ( like a collection of short stories I downloaded from <a href="http://craphound.com/index.php?cat=5">Cory Doctorow</a> ), neither are subscriptions like the NY Times.</p>
+
+	<h3>Inline Dictionary</h3>
+
+	<p>There's not a ton of words I don't know, for the most part I work from context. Once in a while, however, I've found it very handy. Not a kill feature, but a mark in the plus column.</p>
+
+	<h3>Accessability &#8211; Type</h3>
+
+	<p>You can increase the font size (and shrink it I suppose). This isn't a big driver for me, but I can imagine if you are in the market for large type books this could be a serious boon.</p>
+
+	<h3>Accessability &#8211; Text to Speech</h3>
+
+	<p>hmmm. Ok, a lot has been said on this one. Of course, I'll weigh in. I'm a big fan of audio books. I go through a couple new ones a month (at least). I ever re-listen to books so the cost doesn't get out of control. Hands down, no question, comment, or half truth, I can't stand text to speech renditions of books. They are just painful to listen to compared with a well performed &#8216;voice rendition'. I do see a space for text to speech with commuters looking to listen to a chapter on the way to work and for people who need the accessability option of text to speech. As far as license issues, seems like a crap argument to me, <a href="http://journal.neilgaiman.com/2009/02/end-of-audiobook-argument.html">Neil Gaiman</a>, <a href="http://wilwheaton.typepad.com/wwdnbackup/2009/02/wil-wheaton-vs-text-2-speech.html">Wil Wheaton</a>, <a href="http://www.boingboing.net/2009/02/25/authors-guild-vs-rea.html">Cory Doctorow</a> and <a href="http://www.nytimes.com/2009/02/25/opinion/25blount.html?_r=1">others</a> covered this well. In any case Amazon caved and now this is a per book feature. It's a shame. </p>
+
+	<h2>The Bad</h2>
+
+	<h3>Cost</h3>
+
+	<p>There are <a href="http://www.getrichslowly.org/blog/2009/02/24/daily-links-kindle-edition/">others</a> more qualified than I to speak to the finances involved but I think it mostly boils down to a couple things.</p>
+
+	<ul>
+		<li>At $359 I don't think the Kindle is a loss leader and if it is it's still just plain expensive</li>
+		<li>Most books are under $9.99 but I've seen reports that prices are rising</li>
+		<li>Just like iTunes it's easy to buy stuff you don't need</li>
+		<li>It's gonna take a long time to make back the cost of the device in books savings.</li>
+		<li>The public library is a much better way to save money.</li>
+	</ul>
+
+	<h3>Internet</h3>
+
+	<p>Paying for blogs is shenanigans. Not gonna happen especially with an iPhone in my pocket. e-Ink is just a crappy way to give an interactive experience. Despite the <a href="http://xkcd.com/548/">xkcd</a> comic, it's just not a hitchhikers guide to the galaxy. </p>
+
+	<h3>Newspapers / Magazines</h3>
+
+	<p>First of all the UI bites. Reading a newspaper or magazine gives you an overview. A click of the 5 way control stick gives you a table of contents view. Now here is the dumb ass part. If you select the section title you get a full view of the first article and can page through the rest. (I don't like that) to get an article list you have to click on the section article count, eg: Page One (21). It's dumb and I find myself doing the wrong thing almost half the time. It's explained in much more depth by <a href="http://www.useit.com/alertbox/kindle-usability-review.html">Jakob Nielsen</a> in his Kindle 2 usability review.</p>
+
+	<h3>The Device</h3>
+
+	<p>Don't get me wrong it's not horrible, and it's WAAAAY better than the original, but it's not great. The buttons feel cheap, weak click, no tactile feedback to speak of. The 5 way control stick feels like it came off a 70's arcade game. The button I hit most often (besides next page) is the sleep / off control and it feels like it'll be the first thing to break. In general it looks like a giant 2nd gen iPod clone. However it's not the worst thing ever. (I really just needed something else to put under &#8216;bad' in reality I'd file it under &#8216;meh').</p>
+
+	<h3>FAA no likey</h3>
+
+	<p>This is another nit. You can't use it durning takeoff and landing. I tried to have a civil conversation with the flight attendent about how the e-Ink screen doesn't draw a charge once the page is drawn. It didn't work&#8230;</p>
+
+	<h2>Conclusion </h2>
+
+	<p>It's not a book. They're just nice. It's not the same. But it's good.</p>

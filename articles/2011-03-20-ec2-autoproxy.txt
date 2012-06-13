@@ -1,0 +1,17 @@
+---
+title: ec2 autoproxy
+date: 2011/03/20
+tags: osx ec2 proxy
+slug: ec2 autoproxy
+old_url: http://blog.unsure.org/post/543355419
+new_url: 2011/03/20/ec2-autoproxy
+content_type: text/html
+
+<p>I bookmarked a little OS X app called <a href="https://github.com/savagegus/ec2autoproxy">sidestep</a>, it reminds you when you're connected to an unsecured network through growl and lets you set up a system with SOCKS proxy that will secure all your traffic. They give a handful of options as to where to acquire a proxy server. Since I've been playing with ec2 a lot at work I figured I'd just script that. Of course being lazy I decided to start with a <a href="http://sprayfly.com/2009/06/28/shell-script-for-automated-amazon-ec2-personal-proxy-server/
+">pre-existing script.</a></p>
+
+<p>It didn't even remotely work. I needed to fix the bash around getting the instance id, getting the hostname, dealing with OS X instead of linux, etc. No big deal, just tossing a -x at the top of the file gave me all the info I needed to repair it. After spinning up a half dozen instances trying to get everything in place I finally got to the end of the script and let it terminate the instance I was using. As soon as I did that I felt a sinking feeling. The whole script went out of its way to ignore the fact you might have other ec2 instances. Sure enough. The freaking thing terminated ALL of my instances. ALL of them. Even returned my elastic IP's.</p>
+
+<p>Anyway. I fixed the god damned script. Restored my ec2 images from snapshots and created a little github project to keep all the info.</p>
+
+<p><a href="https://github.com/savagegus/ec2autoproxy">ec2autoproxy</a></p>

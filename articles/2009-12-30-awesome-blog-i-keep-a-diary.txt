@@ -1,0 +1,10 @@
+---
+title: Awesome Blog I keep a diary
+date: 2009/12/30
+tags: 
+slug: awesome-blog-i-keep-a-diary
+old_url: http://blog.unsure.org/post/309011795
+new_url: 2009/12/30/awesome-blog-i-keep-a-diary/
+content_type: text/html
+
+<p></p><p><a href="http://www.ikeepadiary.com/diary/2008/03/egypt-part-1/"><img src="http://www.ikeepadiary.com/diary/2008/2008_03_16.Egypt_Part_1/images/IMG_0220.jpg" width="550" height="413" /></a></p>

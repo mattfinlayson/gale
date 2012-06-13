@@ -1,0 +1,28 @@
+---
+title: eBook Management and the Kindle
+date: 2009/03/30
+tags: amazon kindle ebook
+slug: ebook-management-and-the-kindle
+old_url: http://blog.unsure.org/post/543355419
+new_url: 2009/03/30/ebook-management-and-the-kindle/
+content_type: text/html
+
+<p>After my last post <a href="http://blog.infinitechaos.com/">Kyle Smith</a> took advantage of my handy dandy <a href="http://disqus.com/home/">comment system</a> and asked me a little more about the kindle. I was able to answer most of his questions but I dropped the ball on one point, what kind of local management can you do beyond the whispernet connection and the conversion service offered by amazon (at .10 cents a pop).</p>
+
+<p>I took a little time last weekend before my latest business trip to Charlotte to figure it out and I actuall came up with a decent answer.</p>
+
+<h2>Free conversions through amazon</h2>
+
+<p>You can email most text formats and some pictures to somename@kindle.com and for a .10 cent charge amazon will convert your attachment to *.awz and deliver it wirelessly to your kindle through whispernet. You can however email any doc or html file you want to somename@free.kindle.com and receive an *.awz in your inbox that you can then put on your kindle. Quick way to save a dime as long as it isn&#8217;t a PDF.</p>
+
+<h2>Drag n&#8217; Drop</h2>
+
+<p>Additionally you can plug the kindle into your computer with the included USB / Charging cable and the device will be mounted as plain old mass storage, then just drag your converted or compatible document to the &#8216;documents&#8217; folder and the job is done.</p>
+
+<p>This leaves a couple of things to be desired though. There is no way to place a PDF on the device in this manner and there is no meta data associated with the new document. Think iPod with no id3 tags. Lame. Enter Calibre.</p>
+
+<h2>Calibre</h2>
+
+<p><a href="http://unsure.org/blog/2009/03/31/calibre/">Calibre</a> is an open source package for eBook management. It&#8217;s a little rough around the edges but it does a couple really nice things. Full details are outlined on my <a href="http://unsure.org/blog/2009/03/31/calibre/">Calibre</a> page but include conversion, meta data, news fetching, and ebook management.</p>
+
+

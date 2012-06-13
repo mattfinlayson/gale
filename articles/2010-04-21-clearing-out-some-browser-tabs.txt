@@ -1,0 +1,12 @@
+---
+title: Clearing out some browser tabs
+date: 2010/04/21
+tags: jive
+slug: clearing-out-some-browser-tabs
+old_url: http://blog.unsure.org/post/538613392
+new_url: 2010/04/21/clearing-out-some-browser-tabs/
+content_type: text/html
+
+<p><ul><li><strong><a href="http://github.com/trodrigues/mindlocker">mindlocker.net</a> </strong>- This looks very cool, a bliki built on django. The interesting thing is it is backed by github and evernote rather than a traditional db. The idea <a href="http://code.google.com/p/yaki/">reminds me a bit of yaki</a> &#8230; then again the implementation is really just a stub. *le sigh*</li>
+</ul><ul><li><strong><a href="http://lumberjaph.net/blog/index.php/2010/03/25/github-explorer/">Github Explorer</a></strong> - As I&#8217;ve said before I&#8217;m a sucker for visualization of complex data. Between <a href="http://develop.github.com/">github&#8217;s api</a> and a <a href="http://gephi.org/">cool graphing tool</a> the pictures of different open developer communities become striking.</li>
+</ul></p><p><img src="http://dl.dropbox.com/u/360128/tumblr/4460144638_48e7d83e80.jpg" /></p><p>             - <a href="http://kottke.org/10/04/i-am-an-american-conservative-shitheel">I am an American conservative shitheel</a><br />             - <a href="http://kottke.org/10/04/the-ipad-the-kindle-and-the-future-of-books">The iPad, the Kindle, and the future of books</a></p><p id="tags">Tagged with: jive</p>

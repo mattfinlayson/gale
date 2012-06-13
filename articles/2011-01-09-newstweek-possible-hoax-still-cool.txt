@@ -1,0 +1,16 @@
+---
+title: Newstweek, possible hoax but still cool.
+date: 2011/01/09
+tags: network hack hoax
+slug: newstweek-possible-hoax-but-still-cool
+old_url: http://blog.unsure.org/post/543355419
+new_url: 2011/01/09/newstweek-possible-hoax-but-still-cool/
+content_type: text/html
+
+<p>I ran across a post about a little embedded computer that you can plug in any place with a wireless hotspot that will connect to the internet and begin replacing news with bits of fake news. Apparently with a political statement added in.</p> 
+<img src="http://dl.dropbox.com/u/360128/unsure/0c.png"/>
+<p>I thought this was pretty interesting. Not sure yet if it's real but it looks very possible. Makes me curious how hard it would be to build. The website is more than a little shady but it reminds me of a combination of Adbusters and 2600.</p>
+<p>Supposedly it uses <a href="http://www.planex.net/product/router/gw-mf54g2.htm">this board</a> which indeed can run <a href="http://openwrt.org/">Open-WRT</a> and <a href="http://www.dd-wrt.com/site/index">DD-WRT</a>. A quick rundown of the spec page indicates it can run in client mode and the snippet of code shown is very simple and <a href="http://en.wikipedia.org/wiki/ARP_spoofing">looks legit to me</a>. Even scarier it would be difficult to detect since many free hotspots use a similar mechanism to enforce login pages to use their internet (starbucks for example). Also interesting comparing the <a href="http://www.planex.net/image_l_product/router/gw-mf54g2.jpg">planex box</a> to the <a href="http://newstweek.com/?2011-01-07-close-up"closeup of the actual device</a> looks fairly legit.</p>
+
+<iframe src="http://player.vimeo.com/video/18579619" width="400" height="225" frameborder="0"></iframe><p><a href="http://vimeo.com/18579619">Newstweek: news modification demonstration</a> from <a href="http://vimeo.com/user5685529">newstweek</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<p><b>update:</b> I was thinking this was too neat to not to have some people on the interweb talking about it. A little more googling brought up <a href="http://news.ycombinator.com/item?id=2080963">news.ycombinator.com</a> talking about it. I agree with their assessment that the website is looks like a hoax, the box may be a hoax, but it is entirely feasible.</p>

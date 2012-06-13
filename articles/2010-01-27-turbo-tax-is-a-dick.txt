@@ -1,0 +1,10 @@
+---
+title: Turbo Tax is a Dick
+date: 2010/01/27
+tags: tech, jive
+slug: turbo-tax-is-a-dick
+old_url: http://blog.unsure.org/post/357468129
+new_url: 2010/01/27/turbo-tax-is-a-dick/
+content_type: text/html
+
+<p></p><p>Turbo tax tries to screw you out of the $19.95 e-file fee for state taxes. Just mail your state taxes in, only e-file federal. The only downside is TurboTax makes it difficult to do it. This is how you make it work:</p><p>Dicks.</p><p id="tags">Tagged with: tech, jive</p>

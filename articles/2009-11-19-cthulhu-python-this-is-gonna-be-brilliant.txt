@@ -1,0 +1,10 @@
+---
+title: Cthulhu? Python? This is gonna be brilliant.
+date: 2009/11/19
+tags: tech
+slug: cthulhu-python-this-is-gonna-be-brilliant
+old_url: http://blog.unsure.org/post/249897898
+new_url: 2009/11/19/cthulhu-python-this-is-gonna-be-brilliant/
+content_type: text/html
+
+<p></p><p><a href="http://www.codinghorror.com/blog/">Coding Horror</a> is usually a good read, sometimes it&#8217;s just way too long and I skip it, but there are a few posts that are memorable. The one from earlier this week called <a href="http://www.codinghorror.com/blog/archives/001311.html">Parsing HTML the Cthulhu Way</a> was spectacular.</p><p>It just gets better from there. Which leads me back to my google reader inbox where <a href="http://blog.thecapacity.org/">Jay Huie</a> shared a link to <a href="http://www.jgc.org/blog/2009/11/parsing-html-in-python-with.html#">Parsing HTML in Python with BeautifulSoup</a>. This reminded me of a little pet project of mine from a couple months ago. I had given up on it, due to parsing html formatted logs with regex. On monday after reading the coding horror article I dusted it off and was able to fix it up with beautiful soup within an hour.</p><p>All of this is a long way of saying don&#8217;t reinvent the wheel and if you need to work with HTML in python use <a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a>.</p><p>Also all hail Cthulhu.</p><p id="tags">Tagged with: tech</p>

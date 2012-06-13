@@ -1,0 +1,11 @@
+---
+title: Inbox Zero My Experiences  
+date: 2009/08/03
+tags: 
+slug: inbox-zero-my-experiences
+old_url: http://blog.unsure.org/post/155183890
+new_url: 2009/08/03/inbox-zero-my-experiences/
+content_type: text/html
+
+<p></p><p>Inbox Zero
+</p><p>Inbox Zero is a concept that boils down nicely, email is taking up too much time. Most of us have a workload that exceeds our resources, you won&#8217;t be able to fix that problem but you can choose what takes up your time. My standard operating procedure for email was to check it when I logged into work, deal with some of the easy stuff, put most of it off, and eventually ignore most of it. For quite a while now I&#8217;ve been following most of the Inbox Zero tenets, for personal email it has never been too bad. Work email is another beast though and developing a process to deal with it has helped my mental sanity and productivity quite a bit. Also I get to brag on twitter about having nothing sitting in my inbox.</p><p>So first a few links to start out:</p><p>The <a href="http://www.43folders.com/izero">index of Inbox Zero</a> at 43 Folders, they have quite a few articles about the concept and how to implement it. In particular I like the <a href="http://www.43folders.com/2006/03/13/philosophy">Philosophy</a> and <a href="http://www.43folders.com/2006/04/04/better-practices">Better Practices</a> articles.</p><p>If this isn&#8217;t an option asking (nicely) to digest email communications to once or twice a day longer emails may be effective.</p><p>For me email is a 3 times a day activity, when I start my workday, sometime shortly before my lunch break and before I head out for the day. If you need to schedule time for it on your calendar, for me it&#8217;s an informal approach. Otherwise I try not to look at my email. This means, that when I do look at my inbox a few rules apply.</p><p>Finally, the more email you send the more often you&#8217;ll get emailed, it&#8217;s pretty basic. Don&#8217;t send out WTFBBQ messages yourself, don&#8217;t forward clever things, and try to send out less emails and make the ones you send more focused on content.</p>

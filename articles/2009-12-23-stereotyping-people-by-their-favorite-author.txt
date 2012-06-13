@@ -1,0 +1,10 @@
+---
+title: Stereotyping people by their favorite author
+date: 2009/12/23
+tags: 
+slug: stereotyping-people-by-their-favorite-author
+old_url: http://blog.unsure.org/post/297208049
+new_url: 2009/12/23/stereotyping-people-by-their-favorite-author/
+content_type: text/html
+
+<p></p><p>For example:</p><p>The <a href="http://laurenleto.wordpress.com/readers-by-author/">full list</a> is online. Both Eggers and Adams hit kinda close to home &#8230;</p><p>[<a href="http://kottke.org/09/12/stereotyping-people-by-their-favorite-author">via</a>]</p>
