@@ -1,0 +1,44 @@
+<html>
+	<head>
+	    {% block head %}
+		<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+		<LINK REL="SHORTCUT ICON" HREF="/static/images/favicon.ico">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>{% block title %}{% endblock %}</title>
+		{% endblock %}
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="headr"> 
+			<a href="{{url_for('about.index')}}">unsure.org</a> poorly updated since 2004
+		</div> 
+		<div class="nav"> 
+			<ul> 
+				<li> 
+					<a href="{{url_for('blog.index')}}">blog</a> 
+				</li> 
+				<li> 
+					<a href="/projects/">projects</a> 
+				</li> 
+				<li> 
+					<a href="{{url_for('about.index')}}">about</a> 
+				</li> 
+				<li>
+					<a href="/blog/feed">feed</a>
+				</li>
+			</ul> 
+		</div> 
+	</div>
+
+	{% block content %}
+	{% endblock %}
+
+	<footer>
+		powered by <a href="http://unsure.org/gale">gale</a>
+	</footer>
+    
+    {% block js %}
+    {% endblock %}
+
+	</body>
+</html>

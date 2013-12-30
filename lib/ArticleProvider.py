@@ -7,7 +7,7 @@ import datetime
 
 class ArticleProvider:
 	def __init__(self):
-		self.path = "/home/matt/gale/articles"
+		self.path = "articles"
 		self.list = os.listdir(self.path)
 		self.list = sorted(self.list, reverse=True)
 		self.parser = {
@@ -34,10 +34,7 @@ class ArticleProvider:
 		dummy_article["title"] = "NotFound"
 		dummy_article["date"] = "No Date"
 
-		print new_url
-		print 
 		for article in self.parsed_list:
-			print article["new_url"]
 			if article["new_url"] == new_url:
 				return article
 		return dummy_article
@@ -64,7 +61,7 @@ class ArticleProvider:
 			for key in parser:
 				if key + ': ' in line:
 					parsed_article[key] = line.replace(key + ': ','').replace('\n','') 
-		parsed_article["body"] = ''.join(text[8:])
+		parsed_article["body"] = ''.join(text[8:]).decode('utf-8')
 		words = string.split(parsed_article["body"])
 		parsed_article["word_count"] = len(words)
 		return parsed_article

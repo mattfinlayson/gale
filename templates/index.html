@@ -1,46 +1,8 @@
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="/static/css/main.css">
-		<LINK REL="SHORTCUT ICON" HREF="/static/images/favicon.ico">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<title>{{ title }}</title>
-		<script type="text/javascript">
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-632866-6']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
-	</head>
-	<body>
-	<div class="wrapper">
-		<div class="headr"> 
-			<a href="/about/">unsure.org</a> poorly updated since 2004
-		</div> 
-		<div class="nav"> 
-			<ul> 
-				<li> 
-					<a href="/blog/">blog</a> 
-				</li> 
-				<li> 
-					<a href="/projects/">projects</a> 
-				</li> 
-				<li> 
-					<a href="/about/">about</a> 
-				</li> 
-				<li>
-					<a href="/blog/feed/">feed</a>
-				</li>
-			</ul> 
-		</div> 
-	</div>
-	{% for item in items[0:2] %}
+{% block content %}
+    {% for item in items[0:2] %}
 		<section id="articles">
 			<article class="post">
 				<header>
@@ -48,26 +10,20 @@
 					<span class="date">{{ item["date"] }}</span>
 				</header>
 				<section class="content">
-					{{ item["body"] }}
+					{{ item["body"]|safe }}
 				</section>
 			</article>
 		</section>
-	{% end %}
+	{% endfor %}
 	<section id="articles">
 		<ul>
 		{% for item in items[2:] %}
 			<li>
-				<a href="/blog/{{ item["new_url"] }}">{{escape(item["title"])}}</a>
+				<a href="/blog/{{ item["new_url"] }}">{{item["title"]}}</a>
 				<span class="wc"><span class="separator">.</span>{{ item["word_count"] }} words</span>
-				<span style="float: right" class="date"> {{ escape(item["date"]) }} </span>
+				<span style="float: right" class="date"> {{ item["date"] }} </span>
 			</li>
-		{% end %}
+		{% endfor %}
 		</ul>
 	</section>
-
-	<footer>
-		powered by <a href="http://unsure.org/gale">gale</a>
-	</footer>
-
-	</body>
-</html>
+{% endblock %}
