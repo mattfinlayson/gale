@@ -8,7 +8,7 @@ import datetime
 import PyRSS2Gen
 
 import sys
-sys.path.append("lib")
+sys.path.append("providers")
 
 from ArticleProvider import ArticleProvider
 from PageProvider import PageProvider

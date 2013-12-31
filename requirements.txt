@@ -1,0 +1,6 @@
+flask
+markdown
+PyRSS2Gen
+simplejson
+oauth2
+pyaml

@@ -1,0 +1,22 @@
+---
+title: Building habits for New Years Resolutions
+date: 2013/12/31
+tags: ios habits
+slug: Building habits for New Years Resolutions
+new_url: 2013/12/31/building-habits-for-new-years
+content_type: text/html
+---
+
+<p>My wife asks me every year what my new years resolution is going to be, I never know the answer. Last year however, on a whim. I said that I wanted to keep a journal. Last year I finally had a realization that sticking to resolutions is really about building new habits for the first time that is how I approached it.</p>
+
+<p>I've always been the guy that likes buying fancy blank books (thanks moleskin). And I always do a lovely job of writing in the first few pages before I put them down and never pick them up again. When my grandmother passed away I remember my mom and aunts going through a trunk that had belonged to my grandfather who died years before. They had never seen the contents and while they were looking through it they found a journal with a few entries. I remebmer them reading aloud from it and, for the first time, I got a little sense of who the man was. Of course after a few pages it ended and totally left me hanging. As much as I'd love to fill one of these journals up, or even all of them, I haven't done well with it in the past.</p>
+
+<p>For 2013, I decided to keep my journal in Day One, an iOS app. Just like your phone ends up being the best camera you have because you always have it on you my Day One became the best journal I ever bought because I had it with me and used it. The goal was to write every day and I ended up writing about 70% of the time. I think there are a few reasons for this, the largest single reason for me was the daily notification, that it was time to write, at 7pm. That simple promt and the inertia of doing it day after day managed to get me to write. There were a few nice touches as well due to it being on my phone. Each entry is logged by date and time. They all include where I was when I wrote it. Day One has a nice feature that allows you to include a photo with every entry which also got me in the habit of keeping my eye out for an interesting picture to include. Including a photo on each entry was nice, especially for leafing through a grid of previous entries made up of photos throughout the year. The last bit that I appreciated was that Day One allows you to store your entries in iCloud or Dropbox, meaning you can get them out again if you want.</p>
+
+<p>In the theme of habit building on iOS there were a few other apps that I picked up this year that helped me build habits that are important to me.</p>
+
+<p>Plant nanny is a silly little app that made a huge difference. The premise is simple, you have an set amount of water to drink and an animated plant. If you drink your daily goal of water (9 glasses for me). Your plant lives. If you don't, it gets sicker and sicker until it dies. Every day starts with a notification for each glass of water you need and it will regularly remind you to drink. It costs a buck and I'm surprised how big of a difference drinking enough water makes.</p>
+
+<p>Headspace is a meditation teaching tool which I used on and off throughout the year. Headspace uses video to explain the basics of mediation and uses audio to provide guided ten minute exercises in mindfullness and breathing. It comes with 10 built in guided meditations and offers subscriptions for additional meditation guidance with particular focuses. I never ended up subscribing though as I found the 10 available to be enough to get me going. Headspace also offers notifications which I promptly turned off since I didn't often have the ability to drop what I was doing and mediate, it's not quite like drinking a glass of water.</p>
+
+<p>Lift. Lift is really interesting and has been getting better since I started toying with it last year. The goal of lift is to help you build new habits. I found it did help me track the previous three and encouraged me to toy with others, like having a conversation with a stranger every day, doing pushups, etc. In the beginning it offered you the ability to log each time you did you habit, since then they've added social groups to support your habits and to guided habits where the activities get more involved each day and build on one another to help you build habits like running, meditaion, or relaxation.</p>
