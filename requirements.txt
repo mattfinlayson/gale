@@ -4,3 +4,5 @@ PyRSS2Gen
 simplejson
 oauth2
 pyaml
+pygithub
+topia.termextract

@@ -3,7 +3,9 @@
 import os
 import string
 import datetime
-
+import re
+import lib.gist as gist
+import lib.keywords as keywords
 
 class ArticleProvider:
     def __init__(self):
@@ -18,9 +20,11 @@ class ArticleProvider:
             "new_url": "",
             "content_type": ""}
         self.parsed_list = []
+        self.tags = keywords.get_tags()
         for article in self.list:
             if os.path.isfile(self.path + "/" + article):
                 self.parsed_list.append(self.parse_article(article, self.parser))
+
 
     def latest(self):
         return self.parse_article(self.list_one(), self.parser)
@@ -65,12 +69,27 @@ class ArticleProvider:
                 if key + ': ' in line:
                     parsed_article[key] = line.replace(key + ': ','').replace('\n','')
         parsed_article["body"] = ''.join(text[8:]).decode('utf-8')
+        parsed_article["body"] = self.parse_gists(parsed_article["body"])
         words = string.split(parsed_article["body"])
         parsed_article["word_count"] = len(words)
         for k in parser:
             if k not in parsed_article:
                 parsed_article[k] = ""
+        if parsed_article["tags"] == "":
+            parsed_article["tags"] = " ".join(self.parse_keywords(parsed_article["body"], self.tags))
         return self.sanitize(parsed_article)
+
+    def parse_gists(self, body):
+        regex = re.compile("\{\% gist [0-9]* \%\}")
+        results = regex.findall(body)
+        for result in results:
+            gist_id = result.decode('utf-8').split(" ")[-2]
+            replacement_text = gist.render_gist(gist_id)
+            body = body.replace(result, replacement_text)
+        return body
+
+    def parse_keywords(self, body, tags):
+        return keywords.print_tags(body, tags)
 
     def sanitize(self, article):
         article = self.sanitize_new_url(article)

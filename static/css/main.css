@@ -1,7 +1,7 @@
 html { margin: 20px }
 body {
   margin: 0 auto;
-  font-family: Georgia, Times, serif;
+  font-family: Droid Serif,Georgia,Times,serif;
   font-size: 20px;
   line-height: 30px;
   padding: 15px;
@@ -11,11 +11,11 @@ header, footer, section, article {
 	display: block;
 }
 div.headr{
-	float:left;
-	font-family: 'Myriad Pro', 'Droid Serif', Georgia, serif;
-    font-style: italic;
-  	color: #888;
+  float:left;
+  font-family: Droid Serif,Georgia,Times,serif;
+  color: #888;
 }
+
 div.nav{float:right;}
 div.headr,
 div.nav{height:25px;margin-bottom:42px;}
@@ -61,12 +61,20 @@ margin: 0px 5px;
 	font-size: 16px;
 	text-align: right;
 }
+.fancy {
+  text-align: center;
+  font-size: 80px;
+  padding-bottom: 30px;
+  color: #027297;
+  height:85px;
+}
 a {
-  color: #b83000;
+  text-decoration: none;
+  color: #027297;
 }
 h1 a {
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   text-decoration: underline;
@@ -82,6 +90,7 @@ body > header > h1 {
 	line-height: 1.3em;
 }
 .post header h1 {
+  text-align: center;
 	display: block;
 	font-size: 34px;
 	line-height: 1.2em;
@@ -112,7 +121,7 @@ body > header > h1 {
 .more a {
   text-decoration: none;
 }
-.more a:hover { text-decoration: underline }
+.more a:hover { text-decoration: none }
 body > header {
 	display: block;
 	padding-top: 30px;
@@ -121,7 +130,7 @@ body > header {
 }
 h1, h2, h3, h4 {
 	display: inline;
-	font-family: 'Myriad Pro', 'Droid Serif', Georgia, serif;
+	font-family: Droid Serif,Georgia,Times,serif;
 	font-weight: normal;
 	margin: 0px;
 }
@@ -148,8 +157,8 @@ body > footer {
   color: #888;
 }
 section #articles {
-	font-family: 'Myriad Pro', Georgia, serif;
+	font-family: Droid Serif,Georgia,Times,serif;
 }
 section #archives {
-	font-family: 'Myriad Pro', Georgia, serif;
+	font-family: Droid Serif,Georgia,Times,serif;
 }

@@ -4,12 +4,29 @@
 {% block content %}
         <article class="post">
 			<header>
+                <div class="fancy">
+                    <i class="fa fa-circle-o"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle-o"></i>
+                </div>
 				<h1> {{ item["title"] }} </h1>
 				<span class="date">{{ item["date"] }}</span>
 			</header>
 			<section class="content">
 				{{ item["body"]|safe }}
 			</section>
-			<p id="subscribe">Enjoyed the read? follow me on <a href="http://twitter.com/savagegus">twitter</a>, or subscribe to my <a href="http://feeds.feedburner.com/unsure">feed</a>.</p> 
+            <section class="links">
+                <ul>
+                {% for tag_group in links %}
+                    {% for link in tag_group %}
+
+                        <li>
+                            <a href='{{ link["href"] }}'>{{link["description"]}}</a>
+                        </li>
+                    {% endfor %}
+                {% endfor %}
+                 </ul>
+			</section>
+			<p id="subscribe">Enjoyed the read? follow me on <a href="http://twitter.com/savagegus">twitter</a>, or subscribe to my <a href="http://feeds.feedburner.com/unsure">feed</a>.</p>
 		</article>
 {% endblock %}

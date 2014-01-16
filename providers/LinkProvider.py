@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import simplejson as json
-import urllib
 import sys
 
 username = "mattfinlayson"
@@ -13,6 +12,7 @@ tags = ["python", "supervisor", "tornado"]
 items = [0, 1, 2]
 
 base_url = "http://feeds.pinboard.in/json/v1/u:%s" % (username)
+get_tags = "https://api.pinboard.in/v1/tags/get"
 
 for tag in tags:
 	target_url = "%s/t:%s" % (base_url, tag)

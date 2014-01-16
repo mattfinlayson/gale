@@ -17,7 +17,7 @@
 	{% endfor %}
 	<section id="articles">
 		<ul>
-		{% for item in items[1:] %}
+		{% for item in items[0:] %}
 			<li>
 				<a href="/blog/{{ item["new_url"] }}">{{item["title"]}}</a>
 				<span class="wc"><span class="separator">.</span>{{ item["word_count"] }} words</span>

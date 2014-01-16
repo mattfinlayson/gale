@@ -1,7 +1,7 @@
 ---
 title: Building habits for New Years Resolutions
 date: 2013/12/31
-tags: ios habits
+tags:
 slug: Building habits for New Years Resolutions
 new_url: 2013/12/31/building-habits-for-new-years
 content_type: text/html
