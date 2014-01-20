@@ -1,45 +1,60 @@
-<html>
-	<head>
-	    {% block head %}
-		<link rel="stylesheet" type="text/css" href="/static/css/main.css">
-		<LINK REL="SHORTCUT ICON" HREF="/static/images/favicon.ico">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<title>{% block title %}{% endblock %}</title>
-		{% endblock %}
-	</head>
-	<body>
-	<div class="wrapper">
-		<div class="headr">
-			<a href="{{url_for('about.index')}}">unsure.org</a> poorly updated since 2004
-		</div>
-		<div class="nav">
-			<ul>
-				<li>
-					<a href="{{url_for('blog.index')}}">blog</a>
-				</li>
-				<li>
-					<a href="/projects/">projects</a>
-				</li>
-				<li>
-					<a href="{{url_for('about.index')}}">about</a>
-				</li>
-				<li>
-					<a href="/blog/feed">feed</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="SHORTCUT ICON" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/foundation.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/modernizr.js') }}"></script>
+    {% endblock %}
+  </head>
+  <body>
+    <div class="contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">unsure.org</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
 
-	{% block content %}
-	{% endblock %}
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="{{url_for('blog.index')}}">blog</a></li>
+            <li><a href="/projects">projects</a></li>
+            <li><a href="{{url_for('about.index')}}">about</a></li>
+            <li><a href="/blog/feed">feed</a></li>
+          </ul>
 
-	<footer>
-		powered by <a href="http://unsure.org/gale">gale</a>
-	</footer>
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="#">poorly updated since 2004</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
 
-    {% block js %}
+    <div class="row">
+      <div class="large-12 columns">
+        <h3><i class="fa fa-circle-o"></i></h3>
+      </div>
+    </div>
+
+    {% block content %}
     {% endblock %}
 
-	</body>
+    {% block js %}
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    {% endblock %}
+
+  </body>
 </html>

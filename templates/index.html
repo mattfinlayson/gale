@@ -1,29 +1,44 @@
 {% extends "base.html" %}
 {% block title %}{{title}}{% endblock %}
 
+
 {% block content %}
-    {% for item in items[0:1] %}
-		<section id="articles">
-			<article class="post">
-				<header>
-					<h1><a href="/blog/{{ item["new_url"] }}"> {{ item["title"] }} </a></h1>
-					<span class="date">{{ item["date"] }}</span>
-				</header>
-				<section class="content">
-					{{ item["body"]|safe }}
-				</section>
-			</article>
-		</section>
+  {% for item in items[0:1] %}
+  <div class="row">
+	  <div class="large-12 columns">
+	    <div class="panel">
+	      <h2><a href="/blog/{{ item["new_url"] }}"> {{ item["title"] }} </a></h2>
+	      <p>{{ item["date"] }}</p>
+	      <p>{{ item["body"]|safe }}</p>
+			</div>
+	  </div>
+	</div>
 	{% endfor %}
-	<section id="articles">
-		<ul>
-		{% for item in items[0:] %}
-			<li>
-				<a href="/blog/{{ item["new_url"] }}">{{item["title"]}}</a>
-				<span class="wc"><span class="separator">.</span>{{ item["word_count"] }} words</span>
-				<span style="float: right" class="date"> {{ item["date"] }} </span>
-			</li>
-		{% endfor %}
+
+	<div class="row">
+		<div class="large-6 columns">
+		<ul class="pricing-table">
+			<li class="title">Previously</li>
+			{% for item in items[1:] %}
+	  		<li class="bullet-item">
+					<a href="/blog/{{ item["new_url"] }}">{{item["title"]}}</a>
+					<span class="wc"><span class="separator">.</span>{{ item["word_count"] }} words</span>
+					<span style="float: right" class="date"> {{ item["date"] }} </span>
+				</li>
+			{% endfor %}
 		</ul>
-	</section>
+		</div>
+		<div class="large-6 columns">
+		<ul class="pricing-table">
+			<li class="title">Previously</li>
+			{% for item in items[1:] %}
+	  		<li class="bullet-item">
+					<a href="/blog/{{ item["new_url"] }}">{{item["title"]}}</a>
+					<span class="wc"><span class="separator">.</span>{{ item["word_count"] }} words</span>
+					<span style="float: right" class="date"> {{ item["date"] }} </span>
+				</li>
+			{% endfor %}
+		</ul>
+		</div>
+	</div>
 {% endblock %}
