@@ -10,8 +10,9 @@
       <p>{{ item["body"]|safe }}</p>
 
       <ul>
-      {% for tag_group in links %}
-        {% for link in tag_group %}
+      {% for tag in links %}
+        <b>{{tag}}</b>
+        {% for link in links[tag] %}
           <li>
             <a href='{{ link["href"] }}'>{{link["description"]}}</a>
           </li>
