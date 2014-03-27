@@ -24,3 +24,4 @@ def fancy(year, month, day, title):
     #print links
     #return render_template("article.html", title=article["title"], item=article, links=links)
     return render_template("article.html", title=article["title"], item=article)
+

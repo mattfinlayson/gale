@@ -6,6 +6,7 @@ def print_keywords(text):
     extractor = extract.TermExtractor()
     print sorted(extractor(text))
 
+
 def get_tags():
     p = pinboard.open("mattfinlayson", "m0foLamb")
     tags = p.tags()
@@ -14,10 +15,12 @@ def get_tags():
         tags_set.add(tag['name'].decode("utf-8"))
     return tags_set
 
+
 def print_tags(text, tags):
     text_set = set(text.split(" "))
     matches = tags & text_set
     return list(matches)[0:5]
+
 
 def get_links(tags):
     p = pinboard.open("mattfinlayson", "m0foLamb")
