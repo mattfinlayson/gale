@@ -31,3 +31,7 @@ thanks
 To [tornado]("http://www.tornadoweb.org/") for the heavy lifting.
 To [Alexis Sellier]("http://cloudhead.io") for [toto]("https://github.com/cloudhead/toto") and all the ideas the theme gale uses
 To [Rui Carmo]("http://the.taoofmac.com") for [yaki]("http://code.google.com/p/yaki/") and the ideas that gale steals from it.
+
+used
+=============
+[thepatternlibrary]("http://thepatternlibrary.com/")

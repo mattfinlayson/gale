@@ -11,8 +11,6 @@ a = ArticleProvider()
 
 @blog.route('/')
 def index():
-    for key, value in a.latest().iteritems():
-        print key, value
     return render_template("index.html", title="index", items=a.parsed_list)
 
 
@@ -20,8 +18,10 @@ def index():
 def fancy(year, month, day, title):
     new_url = "%s/%s/%s/%s/" % (year, month, day, title)
     article = a.fetch_one(new_url)
-    #links = keywords.get_links(article["tags"].split())
+    links = keywords.get_relevant_links(article["tags"])
     #print links
-    #return render_template("article.html", title=article["title"], item=article, links=links)
-    return render_template("article.html", title=article["title"], item=article)
+    return render_template("article.html", title=article["title"], item=article, links=links)
 
+@blog.route('/feed')
+def feed():
+    return render_template("index.xml", title="index", items=a.parsed_list)
